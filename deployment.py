@@ -4,7 +4,7 @@ import modelling
 df_preprocessed = (pd.read_csv("dataset-5-preprocessed.csv"))
 df = (df_preprocessed[["nama_toko", "unit", "nama", "average_harga_produk_per_unit", "kategori"]].drop_duplicates(ignore_index=True))
 
-st.write("# sistem rekomendasi berdasarkan Harga")
+st.write("# System Recommendation Produk di Semua Kategori Berdasarkan Harga Menggunakan Collaborative Filtering")
 
 kategori = list(df["kategori"].unique())
 pilihan_kategori = st.selectbox("Masukkan Pilihan Kategori: ", kategori)
