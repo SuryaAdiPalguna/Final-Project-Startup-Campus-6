@@ -34,5 +34,5 @@ def main(df, pilihan_kategori, pilihan_supermarket):
 
     """### Output"""
 
-    already_rated, predictions = recommend_products(preds_df, pilihan_supermarket, df_categorized, 10)
+    already_rated, predictions = recommend_products(preds_df, pilihan_supermarket, df_categorized, 8)
     return already_rated, predictions
